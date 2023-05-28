@@ -45,3 +45,5 @@ For save token env (safe)
 ```
 read -s TELE_TOKEN
 ```
+
+Bot address: http://t.me/devops_test_kbot
