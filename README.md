@@ -34,3 +34,8 @@ cobra-cli add kbot
 ```
  go build -ldflags="-X 'github.com/HoiSerhii/kbot/cmd.appVersion=v1.0.0'"
 ```
+
+For save token env (safe)
+```
+read -s TELE_TOKEN
+```
