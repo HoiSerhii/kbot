@@ -64,6 +64,15 @@ to quickly create a Cobra application.`,
 			return err
 		})
 
+		kbot.Handle("/echo", func(m telebot.Context) error {
+			payload := m.Message().Payload
+
+			log.Print(payload, m.Text())
+			err = m.Send(payload)
+
+			return err
+		})
+
 		kbot.Start()
 	},
 }
