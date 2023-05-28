@@ -49,6 +49,8 @@ read -s TELE_TOKEN
 Bot address: http://t.me/devops_test_kbot
 
 # Bot commands that you can try
+```
 /start hello - return message with version
 /help - just return "How can I help you?" 🙃
 /echo $sometext - as answer will repeat $sometext
+```
