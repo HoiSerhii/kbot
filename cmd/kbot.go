@@ -52,6 +52,21 @@ to quickly create a Cobra application.`,
 				err = m.Send(fmt.Sprintf("Hello I'm kbot %s!", appVersion))
 			}
 
+			log.Println("Here", telebot.OnText)
+			switch telebot.OnText {
+			case "/help":
+				err = m.Send("How can I help you?")
+			}
+
+			return err
+		})
+
+		kbot.Handle("/help", func(m telebot.Context) error {
+			payload := m.Message().Payload
+
+			log.Print(payload, m.Text())
+			err = m.Send("How can I help you?")
+
 			return err
 		})
 
